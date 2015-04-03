@@ -1,6 +1,13 @@
 Djangular
 =================
-Talk/Slides: [http://mattcamilli.com/talks/djangular/#/](http://mattcamilli.com/talks/djangular/#/)
+
+To install run `npm install`.
+
+
+
+### Talk/Slides
+
+* [http://mattcamilli.com/talks/djangular/#/](http://mattcamilli.com/talks/djangular/#/)
 
 Installing virtualenv:
 [http://docs.python-guide.org/en/latest/dev/virtualenvs/](http://docs.python-guide.org/en/latest/dev/virtualenvs/)

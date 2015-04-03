@@ -18,9 +18,6 @@ Polls
         </li>
     </ul>
 </script>
-
-
-
 <script type="text/ng-template" id="questionDetail">
     <form class="form" ng-submit="vote()" ng-show="!voted">
         <h2>[[question.question_text]]</h2>
@@ -49,8 +46,8 @@ Polls
 {% endblock %}
 
 {% block javascript %}
-<script src="{{ STATIC_URL }}js/angular.js"></script>
-<script src="{{ STATIC_URL }}js/angular-ui-router.min.js"></script>
+<script src="{{ STATIC_URL }}libraries/angular/angular.min.js"></script>
+<script src="{{ STATIC_URL }}libraries/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="{{ STATIC_URL}}js/app.js"></script>
 <script src="{{ STATIC_URL}}js/controllers.js"></script>
 <script src="{{ STATIC_URL}}js/directives.js"></script>

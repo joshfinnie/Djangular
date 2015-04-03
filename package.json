@@ -1,12 +1,21 @@
 {
-  "name": "TrackMaven",
+  "name": "TrackMaven-Djangular",
   "author": "TrackMaven Engineering",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.1",
-    "grunt-contrib-coffee": "~0.7.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrackMaven/Djangular.git"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/gulp --require coffee-script/register"
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "coffee-script": "^1.9.1",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-util": "^3.0.4"
   }
 }
