@@ -1,10 +1,11 @@
+{% load staticfiles %}
 <!doctype html>
 <html>
     <head>
         {% block head %}{% endblock %}
         <title>{% block title %}Django District Demo{% endblock %}</title>
-        <link rel="stylesheet" href="{{ STATIC_URL }}libraries/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" />
+        <link rel="stylesheet" href="{% static "libraries/bootstrap/dist/css/bootstrap.min.css" %}" />
+        <link rel="stylesheet" href="{% static "css/style.css" %}" />
     </head>
     <body {% block body%} {% endblock %}>
         <div class="container">
@@ -15,8 +16,8 @@
             {% block content %}
             {% endblock %}
         </div>
-        <script src="{{ STATIC_URL }}libraries/jquery/dist/jquery.min.js"></script>
-        <script src="{{ STATIC_URL }}libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="{% static "libraries/jquery/dist/jquery.min.js" %}"></script>
+        <script src="{% static "libraries/bootstrap/dist/js/bootstrap.min.js" %}"></script>
         {% block javascript %}
         {% endblock %}
   </body>
