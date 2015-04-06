@@ -18,5 +18,10 @@
 
 /node_modules
 /djangular/static/libraries
-/public/*.js
 npm-debug.log
+
+/* Compiled Angular App */
+djangular/static/js/app.js
+djangular/static/js/services.js
+djangular/static/js/controllers.js
+djangular/static/js/directives.js
