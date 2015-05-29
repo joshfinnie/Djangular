@@ -11,4 +11,5 @@ gulp.task 'coffee', ->
 gulp.task 'watch', ->
     gulp.watch("djangular/frontend/**/*.coffee", ['coffee'])
 
+gulp.task('build', ['coffee'])
 gulp.task('default', ['coffee', 'watch'])

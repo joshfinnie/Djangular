@@ -6,7 +6,7 @@
     "url": "https://github.com/TrackMaven/Djangular.git"
   },
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/gulp --require coffee-script/register"
+    "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/gulp build --require coffee-script/register"
   },
   "engines": {
     "node": ">=0.10.0"
